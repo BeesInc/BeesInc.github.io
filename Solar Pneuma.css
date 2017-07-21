@@ -1,0 +1,59 @@
+#WeatherBox {
+	background-color:#80ccff;
+	height:40px;
+	width:300px;
+	border:2px solid #3366ff;
+	font-family:"Lucida Console";
+	text-align:center;
+	overflow:hidden;
+	float:left;	
+}
+#SolarEssence {
+	height:40px;
+	width:300px;
+	border: 2px solid #000000;
+	font-size: 13px;
+	font-family:"Lucida Console";
+	text-align:center;
+	float:left;
+}
+#WorldClock {
+	background-color:#d4af37;
+	height:40px;
+	width:300px;
+	border:4px dashed #c2c2d5;
+	font-family:"Lucida Console";
+	text-align:left;
+	overflow:hidden;
+}
+.Upgrades {
+	height:80px;
+	width:300px;
+	border:2px solid #000000;
+	font-family:"Lucida Console";
+	text-align:center;
+	overflow:hidden;
+	
+}
+.Mirror {
+	height:40px;
+	width:250px;
+	border:2px solid #000000;
+	text-align:center;
+	margin:auto;
+}
+#MirrorName {
+	text-align:left;
+	font-size:18px;
+	position: relative;
+	bottom: 5px;
+	right:60px;
+}
+#MirrorUpgradeTable {
+	text-align:middle;
+	font-size:12px;
+	position: relative;
+	bottom: 30px;
+	left: 110px
+}
+
