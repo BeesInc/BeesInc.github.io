@@ -19,8 +19,9 @@ var Day = 0;
 var Hour = 0;
 var Minute = 0;
 var NumSolarEssence = 0;
-var GainRate = WeatherEffect[WeatherState]/25;
+var GainRate = (WeatherEffect[WeatherState]+MirrorNum)/25;
 var MirrorCost = 1;
+var MirrorNum = 0;
 ObtainWeatherA();
 BaseClock();
 SolarEssenceGain();
@@ -146,8 +147,11 @@ function UpgradeMirror() {
 	if (NumSolarEssence >= MirrorCost) {
 		NumSolarEssence -= MirrorCost;
 		MirrorCostIncrease();
+		MirrorNum++;
+		GainRate = (WeatherEffect[WeatherState]+MirrorNum)/25;
 	}
 	document.getElementById("SolarEssenceTotal").innerHTML = NumSolarEssence;
+	document.getElementById("MirrorNumber").innterHTML = MirrorNum;
 }
 function MirrorCostIncrease() {
 	MirrorCost ++;
